@@ -30,3 +30,18 @@ body {
     transform: translateZ(200px);
     filter: brightness(1);
 }
+
+.list .item:hover + * {
+    transform: translateZ(150px) rotateY(40deg);
+    filter: brightness(0.6);
+}
+
+.list .item:hover + * + * {
+    transform: translateZ(70px) rotateY(20deg);
+    filter: brightness(0.4);
+}
+
+.list .item:hover + * + * + * {
+    transform: translateZ(30px) rotateY(10deg);
+    filter: brightness(0.2);
+}
