@@ -17,3 +17,16 @@ body {
     height: auto;
     border-radius: 6px;
 }
+
+.list {
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+}
+.list .item {
+    transition: .5s;
+    filter: brightness(0);
+}
+.list .item:hover {
+    transform: translateZ(200px);
+    filter: brightness(1);
+}
